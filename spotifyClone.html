@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify: Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilityClasses.css">
+</head>
+
+<body>
+    <div class="container bgColorBlack ">
+        <div class="left">
+            <div class="close">
+                <img class="closeimg" src="close.svg" alt="">
+            </div>
+            <div class="home bgGrey roundBorder m-1 p-1">
+                <div class="divlogo"><img class="logo invert" src="spotifyLOGO.svg" alt="logo"></div>
+                <ul class="list">
+                    <li class="flex listing inter-font"><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li class="flex listing inter-font"><img class="invert" src="search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+ 
+            <div class="library bgGrey roundBorder m-1 p-1">
+                <ul class="list">
+                    <li class="flex listing inter-font"><img src="library.svg" alt="library" class="invert">Your Library
+                    </li>
+                </ul>
+                <div class="songsList">
+                    <ul>
+                        <!-- <li class='roundBorder'>
+                            <img class="invert songImgForLibrary" src="music.svg" alt="">
+                            <div class="songDetails">
+                                <div>Song name</div>
+                                <div>Artist</div>
+
+                            </div>
+                    
+                            <img class="invert songImgForLibrary" src="play-pauseSong.svg" alt="">
+    
+                            
+
+                        </li> --> 
+    
+
+                    </ul>
+                </div>
+
+                
+
+                <div class="footer flex">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/" target="_blank">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/" target="_blank" >
+                            <span>Safety</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/" target="_blank">
+                            <span>Privacy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/" target="_blank">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" target="_blank">
+                            <span>Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/" target="_blank">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right roundBorder">
+            <div class="header roundBorder p-1">
+                <!-- hamburger ko aur uske neeche wale div ko ek hi div mai dal kr flexbox krdiya hai aur hamburger k neeche wale div ki svg(s) mai flex1 add kiya hai  -->
+                <div class="nav flex1">
+                    
+                    <img class="hamburgerImg invert" src="hamburger.svg" alt="">
+                    
+                    <!-- follow the link for svg icons '<' and  '>' and search left arrow and right arrow :
+                    https://hugeicons.com/icon/arrow-right-01-stroke-rounded -->
+                    
+                    <svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                       <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    
+                    
+                </div>
+                <div class="buttons">
+                    <button class="signup inter-font">Sign up</button>
+                    <button class="login inter-font">Log in</button>
+                </div>
+            </div>
+            <h1 class="inter-font p-1">Popular albums</h1>
+            <div class="cards p-1 roundBorder">
+
+               
+                
+            </div>
+
+            <div class="playbar">
+                <div class="firstContainer">
+                    <div class="songinfo inter-font">
+
+                    </div>
+                    <div class="playButtons">
+                        <img class="invert cursorPointer playsideButtons" id="previousSong" src="previousSong.svg" alt="not found">
+                        <img class="invert cursorPointer playing" id="play" src="playSong.svg" alt="not found">
+                        <img class="invert cursorPointer playsideButtons" id="nextSong" src="nextSong.svg" alt="not found">
+                    </div>
+                    <div class="durationOuter">
+                        <div class="volume">
+                            <img class="invert" src="volume.svg" alt="not found">
+                            
+                        </div>
+                        <div class="volumeBar">
+                            <input id="volbar" type="range">
+                        </div>
+                        
+                        <div class="songduration">
+
+                        </div>
+
+                      
+                    </div>
+                    
+
+                </div>
+                
+                
+                <div class="songtime">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>   
+
+</html>

@@ -1,0 +1,98 @@
+.redBorder{
+    border: 2px solid red;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.flex{
+    display: flex;
+}
+.invert{
+    filter: invert(1);
+}
+.bgColorBlack{
+    background-color: black;
+    color: white;
+}
+.bgGrey{
+    background-color: #121212;
+}
+.roundBorder{
+    border-radius: 7px;
+}
+.m-1{
+    margin: 10px;
+}
+.m-2{
+    margin: 17px;
+}
+.p-1{
+    padding: 12px 20px;
+}
+.p-2{
+    padding: 15px;
+}
+.font-Weight{
+    font-weight: 450;
+}
+.transition{
+    opacity: 0;
+    transition: all 1s ease-in-out;
+} 
+/* transition class can be applied to playOuter class in html section */
+
+
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px;              /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #333;         /* Track (background) color */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;   /* Color of the scrollbar handle */
+    border-radius: 10px;      /* Rounded scrollbar handle */
+    border: 2px solid #000;   /* Optional border to give space */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;   /* Hover effect on scrollbar */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;          /* Scrollbar width */
+    scrollbar-color: #555 #333;     /* Handle and track color */
+}
+
+/* Additional custom styles */
+.content {
+    height: 200vh;  /* Adding extra height to make sure scrollbar appears */
+    padding: 20px;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+.flex1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p-library{
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+}
+.m-library{
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+
+}
